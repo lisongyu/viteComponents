@@ -1,0 +1,22 @@
+{
+  "name": "smarty-ui-vite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-vue-jsx": "^2.0.1",
+    "vite": "^3.1.4"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^3.1.2",
+    "vue": "^3.2.40"
+  }
+}
