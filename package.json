@@ -6,14 +6,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build"
-
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@iconify-json/ic": "^1.1.9",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
-    "vite": "^3.1.4"
+    "unocss": "0.45.22",
+    "vite": "^3.1.6"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^3.1.2",
