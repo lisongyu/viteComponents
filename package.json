@@ -34,6 +34,7 @@
     "happy-dom": "6.0.4",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
+    "terser": "5.4.0",
     "unocss": "0.45.22",
     "vite": "^3.1.6",
     "vitepress": "0.22.4",
