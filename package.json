@@ -1,7 +1,6 @@
 {
-  "name": "smarty-ui-vite",
-  "version": "1.0.0",
-  "description": "",
+  "name": "my-lisy-components",
+  "version": "0.1.0",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -47,5 +46,17 @@
     "@vitejs/plugin-vue": "^3.1.2",
     "typescript": "^4.8.4",
     "vue": "^3.2.40"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisongyu/viteComponents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lisongyu/viteComponents/issues"
+  },
+  "homepage": "https://github.com/lisongyu/viteComponents#readme",
+  "description": ""
 }
