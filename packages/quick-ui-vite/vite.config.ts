@@ -14,7 +14,7 @@ const rollupOptions = {
     external: ["vue", "vue-router"],
    
     output: {
-      assetFileNames: `assets/[name].css`,
+      assetFileNames: `[name].css`,
       globals: {
         vue: "Vue",
       },
