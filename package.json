@@ -13,7 +13,8 @@
     "vue": "^3.2.40"
   },
   "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
