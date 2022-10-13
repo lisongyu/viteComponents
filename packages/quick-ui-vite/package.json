@@ -1,8 +1,7 @@
 {
-  "name": "quick-ui-vite",
-  "version": "0.1.0",
+  "name": "my-lisy-components",
+  "version": "0.2.0",
   "main": "index.js",
-  "module": "./dist/smarty-ui.esm.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
