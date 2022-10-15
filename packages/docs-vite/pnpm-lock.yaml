@@ -1,9 +1,0 @@
-lockfileVersion: 5.3
-
-specifiers:
-  my-lisy-components: workspace:^0.1.0
-  smarty-ui-vite: workspace:^1.0.0
-
-dependencies:
-  my-lisy-components: link:../smarty-ui-vite
-  smarty-ui-vite: link:../..

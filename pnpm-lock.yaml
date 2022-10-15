@@ -19,9 +19,9 @@ importers:
 
   packages/docs-vite:
     specifiers:
-      quick-ui-vite: workspace:^0.1.0
+      my-lisy-components: workspace:^0.2.0
     dependencies:
-      quick-ui-vite: link:../quick-ui-vite
+      my-lisy-components: link:../quick-ui-vite
 
   packages/quick-ui-vite:
     specifiers:
@@ -77,6 +77,9 @@ importers:
       vitepress: registry.npmmirror.com/vitepress/0.22.4
       vitepress-theme-demoblock: registry.npmmirror.com/vitepress-theme-demoblock/1.4.2
       vitest: registry.npmmirror.com/vitest/0.21.1_happy-dom@6.0.4+terser@5.4.0
+
+  packages/quick-ui-vite/dist/Button:
+    specifiers: {}
 
 packages:
 
