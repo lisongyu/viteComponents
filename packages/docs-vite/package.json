@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "my-lisy-components": "workspace:^0.2.0"
+  
   }
 }
