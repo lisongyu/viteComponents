@@ -7,7 +7,7 @@
 <h1 align="center">viteComponents</h1>
 
 <p align="center">
-前端工程化教学模型
+前端工程化自我实现
 </p>
 
 <p align="center">
