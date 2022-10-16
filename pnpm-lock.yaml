@@ -19,9 +19,9 @@ importers:
 
   packages/docs-vite:
     specifiers:
-      quick-ui-vite: workspace:^0.1.0
+      my-lisy-components: workspace:^0.2.0
     dependencies:
-      quick-ui-vite: link:../quick-ui-vite
+      my-lisy-components: link:../quick-ui-vite
 
   packages/quick-ui-vite:
     specifiers:
@@ -38,6 +38,8 @@ importers:
       eslint-plugin-json: ^3.1.0
       eslint-plugin-prettier: ^4.2.1
       eslint-plugin-vue: ^9.6.0
+      esno: ^0.16.3
+      fs-extra: ^10.1.0
       happy-dom: 6.0.4
       prettier: ^2.7.1
       terser: 5.4.0
@@ -65,6 +67,8 @@ importers:
       eslint-plugin-json: registry.npmmirror.com/eslint-plugin-json/3.1.0
       eslint-plugin-prettier: registry.npmmirror.com/eslint-plugin-prettier/4.2.1_eslint@8.25.0+prettier@2.7.1
       eslint-plugin-vue: registry.npmmirror.com/eslint-plugin-vue/9.6.0_eslint@8.25.0
+      esno: registry.npmmirror.com/esno/0.16.3
+      fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       happy-dom: registry.npmmirror.com/happy-dom/6.0.4
       prettier: registry.npmmirror.com/prettier/2.7.1
       terser: registry.npmmirror.com/terser/5.4.0
@@ -73,6 +77,9 @@ importers:
       vitepress: registry.npmmirror.com/vitepress/0.22.4
       vitepress-theme-demoblock: registry.npmmirror.com/vitepress-theme-demoblock/1.4.2
       vitest: registry.npmmirror.com/vitest/0.21.1_happy-dom@6.0.4+terser@5.4.0
+
+  packages/quick-ui-vite/dist/Button:
+    specifiers: {}
 
 packages:
 
@@ -898,6 +905,33 @@ packages:
       algoliasearch: registry.npmmirror.com/algoliasearch/4.14.2
     transitivePeerDependencies:
       - '@algolia/client-search'
+    dev: true
+
+  registry.npmmirror.com/@esbuild-kit/cjs-loader/2.4.0:
+    resolution: {integrity: sha512-DBBCiHPgL2B/elUpvCDhNHXnlZQ9sfO2uyt1OJyAXKT41beQEFY4OxZ6gwS+ZesRCbZ6JV8M7GEyOPkjv8kdIw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@esbuild-kit/cjs-loader/-/cjs-loader-2.4.0.tgz}
+    name: '@esbuild-kit/cjs-loader'
+    version: 2.4.0
+    dependencies:
+      '@esbuild-kit/core-utils': registry.npmmirror.com/@esbuild-kit/core-utils/3.0.0
+      get-tsconfig: registry.npmmirror.com/get-tsconfig/4.2.0
+    dev: true
+
+  registry.npmmirror.com/@esbuild-kit/core-utils/3.0.0:
+    resolution: {integrity: sha512-TXmwH9EFS3DC2sI2YJWJBgHGhlteK0Xyu1VabwetMULfm3oYhbrsWV5yaSr2NTWZIgDGVLHbRf0inxbjXqAcmQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@esbuild-kit/core-utils/-/core-utils-3.0.0.tgz}
+    name: '@esbuild-kit/core-utils'
+    version: 3.0.0
+    dependencies:
+      esbuild: registry.npmmirror.com/esbuild/0.15.10
+      source-map-support: registry.npmmirror.com/source-map-support/0.5.21
+    dev: true
+
+  registry.npmmirror.com/@esbuild-kit/esm-loader/2.5.0:
+    resolution: {integrity: sha512-ySs0qOsiwj+hsgZM9/MniGdvfa9/WzqfFuIia8/5gSUPeIQIX2/tG91QakxPFOR35VFiwTB7wCiHtiS6dc6SkA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@esbuild-kit/esm-loader/-/esm-loader-2.5.0.tgz}
+    name: '@esbuild-kit/esm-loader'
+    version: 2.5.0
+    dependencies:
+      '@esbuild-kit/core-utils': registry.npmmirror.com/@esbuild-kit/core-utils/3.0.0
+      get-tsconfig: registry.npmmirror.com/get-tsconfig/4.2.0
     dev: true
 
   registry.npmmirror.com/@esbuild/android-arm/0.15.10:
@@ -3374,6 +3408,15 @@ packages:
       - supports-color
     dev: true
 
+  registry.npmmirror.com/esno/0.16.3:
+    resolution: {integrity: sha512-6slSBEV1lMKcX13DBifvnDFpNno5WXhw4j/ff7RI0y51BZiDqEe5dNhhjhIQ3iCOQuzsm2MbVzmwqbN78BBhPg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/esno/-/esno-0.16.3.tgz}
+    name: esno
+    version: 0.16.3
+    hasBin: true
+    dependencies:
+      tsx: registry.npmmirror.com/tsx/3.10.1
+    dev: true
+
   registry.npmmirror.com/espree/9.4.0:
     resolution: {integrity: sha512-DQmnRpLj7f6TgN/NYb0MTzJXL+vJF9h3pHy4JhCIs3zwcgez8xmGg3sXHcEO97BrmO2OSvCwMdfdlyl+E9KjOw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/espree/-/espree-9.4.0.tgz}
     name: espree
@@ -3646,6 +3689,12 @@ packages:
     name: get-stream
     version: 6.0.1
     engines: {node: '>=10'}
+    dev: true
+
+  registry.npmmirror.com/get-tsconfig/4.2.0:
+    resolution: {integrity: sha512-X8u8fREiYOE6S8hLbq99PeykTDoLVnxvF4DjWKJmz9xy2nNRdUcV8ZN9tniJFeKyTU3qnC9lL8n4Chd6LmVKHg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/get-tsconfig/-/get-tsconfig-4.2.0.tgz}
+    name: get-tsconfig
+    version: 4.2.0
     dev: true
 
   registry.npmmirror.com/git-raw-commits/2.0.11:
@@ -5592,6 +5641,19 @@ packages:
     dependencies:
       tslib: registry.npmmirror.com/tslib/1.14.1
       typescript: registry.npmmirror.com/typescript/4.8.4
+    dev: true
+
+  registry.npmmirror.com/tsx/3.10.1:
+    resolution: {integrity: sha512-Gh6xoW4xrdnLs6hYZydVHIQtrgmbZ/DbnJoLsYoI8MxhKAIyu8R7RyF0D5qg9UKi74Nmr4iSlijdz7Q43IGLyQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tsx/-/tsx-3.10.1.tgz}
+    name: tsx
+    version: 3.10.1
+    hasBin: true
+    dependencies:
+      '@esbuild-kit/cjs-loader': registry.npmmirror.com/@esbuild-kit/cjs-loader/2.4.0
+      '@esbuild-kit/core-utils': registry.npmmirror.com/@esbuild-kit/core-utils/3.0.0
+      '@esbuild-kit/esm-loader': registry.npmmirror.com/@esbuild-kit/esm-loader/2.5.0
+    optionalDependencies:
+      fsevents: registry.npmmirror.com/fsevents/2.3.2
     dev: true
 
   registry.npmmirror.com/type-check/0.4.0:

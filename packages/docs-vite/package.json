@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "quick-ui-vite": "workspace:^0.1.0"
+  
   }
 }
