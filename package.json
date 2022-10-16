@@ -10,6 +10,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-conventional": "17.0.2",
+    "terser": "^5.15.1",
     "vue": "^3.2.40"
   },
   "scripts": {
