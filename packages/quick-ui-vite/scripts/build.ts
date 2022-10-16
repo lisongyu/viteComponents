@@ -6,7 +6,13 @@ import * as fs from "fs-extra";
 const buildAll = async () => {
   // 1. 导入vite.config中的配置，使用vite的build方法进行全量打包
   await build(defineConfig(config as UserConfig) as InlineConfig);
-
+  const packageJson = require("../package.json");
+  packageJson.main = "quick-ui.umd.js";
+  packageJson.module = "quick-ui.esm.js";
+  fs.outputFile(
+    path.resolve(config.build.outDir, `package.json`),
+    JSON.stringify(packageJson, null, 2)
+  );
   // 2. 读取文件夹 遍历组件库文件夹
   const srcDir = path.resolve(__dirname, "../src/");
 
