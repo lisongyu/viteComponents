@@ -21,7 +21,7 @@ importers:
 
   packages/docs-vite:
     specifiers:
-      my-lisy-components: workspace:^0.2.0
+      my-lisy-components: workspace:^0.3.0
     dependencies:
       my-lisy-components: link:../quick-ui-vite
 
@@ -83,6 +83,9 @@ importers:
       vitest: registry.npmmirror.com/vitest/0.21.1_happy-dom@4.1.0+terser@5.4.0
 
   packages/quick-ui-vite/dist/Button:
+    specifiers: {}
+
+  packages/quick-ui-vite/dist/button2:
     specifiers: {}
 
 packages:
