@@ -10,12 +10,12 @@
 
 <body>
 
-    <h1>🔨 SmartyUI Demo</h1>
+    <h1>🔨 QuickUI Demo</h1>
     <div id="app"></div>
     <script type="module">
-        import style from "quick-ui-vite/dist/style.css"
+        import style from "my-lisy-components/style.css"
         import { createApp } from "vue/dist/vue.esm-bundler.js";
-        import SmartyUI, { SFCButton, JSXButton, Button as SButton } from "quick-ui-vite/dist/smarty-ui.esm.js";
+        import QuickUI, { SFCButton, JSXButton, Button as SButton } from "my-lisy-components/quick-ui.esm.js";
 
         createApp({
             template: `
@@ -53,7 +53,7 @@
             <SButton color="yellow" round plain icon="message"></SButton>
             <SButton color="red" round plain icon="delete"></SButton>
         </div>
-    `}).use(SmartyUI).mount('#app')
+    `}).use(QuickUI).mount('#app')
 
     </script>
 </body>

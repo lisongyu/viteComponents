@@ -5,7 +5,7 @@
 import { createApp } from "vue";
 //import { createApp } from "vue/dist/vue.esm-browser";
 
-import SmartyUI from "./entry";
+import QuickUI from "./entry";
 
 // import SFCButton from "./JSXButton";
 createApp({
@@ -47,5 +47,5 @@ createApp({
     
     `,
 })
-  .use(SmartyUI)
+  .use(QuickUI)
   .mount("#app");
