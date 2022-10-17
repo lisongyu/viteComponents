@@ -1,0 +1,8 @@
+lockfileVersion: 5.3
+
+specifiers:
+  my-lisy-components: workspace:^0.3.0,
+
+
+dependencies:
+  my-lisy-components: link:../quick-ui-vite
