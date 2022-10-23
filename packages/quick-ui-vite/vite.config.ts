@@ -1,9 +1,8 @@
 /// <reference types="vitest" />
-import { defineConfig, Plugin } from "vite";
+import { defineConfig, Plugin, UserConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import UnoCss from "./config/unocss";
-import { UserConfig } from "vitest";
 const rollupOptions = {
   external: ["vue"],
   output: {
